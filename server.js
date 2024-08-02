@@ -9,6 +9,8 @@ const todoRoutes = require('./routes/todoRoutes');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+console.log('JWT_SECRET:', process.env.JWT_SECRET);
+
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
