@@ -112,3 +112,10 @@ select {
   align-items: center;
   justify-content: space-between;
 }
+.layout-container{
+  display: flex;
+  flex-direction: column;
+}
+.space-button{
+  margin-bottom: 20px;
+}

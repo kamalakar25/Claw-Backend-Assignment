@@ -37,15 +37,15 @@ const Auth = ({ setToken, token }) => {
       <h2>{isLogin ? 'Login' : 'Register'}</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className='layout-container'>
           <label>Email</label>
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
-        <div>
+        <div className='layout-container'>
           <label>Password</label>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
-        <button type="submit">{isLogin ? 'Login' : 'Register'}</button>
+        <button type="submit" className='space-button'>{isLogin ? 'Login' : 'Register'}</button>
         <button type="button" onClick={() => setIsLogin(!isLogin)}>
           {isLogin ? 'Switch to Register' : 'Switch to Login'}
         </button>
