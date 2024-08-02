@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://claw-backend-assignment.onrender.com/api'; 
+const API_URL = 'https://claw-backend-assignment.onrender.com/api'; //'http://localhost:5000/api';
 
 const register = (email, password) => axios.post(`${API_URL}/auth/register`, { email, password });
 const login = (email, password) => axios.post(`${API_URL}/auth/login`, { email, password });
