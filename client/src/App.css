@@ -1,0 +1,114 @@
+/* General styles for the entire application */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the entire app */
+.App {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for headings */
+h2 {
+  margin: 0 0 20px;
+  font-size: 2rem;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2575fc; /* Button background color */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #6a11cb; /* Darker shade on hover */
+}
+
+/* Error message styles */
+p {
+  color: #ff6f6f; /* Error color */
+}
+
+/* Styles for the todo list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for todo items */
+}
+
+input[type="text"] {
+  margin-right: 10px;
+}
+
+select {
+  margin-right: 10px;
+}
+
+
+.todo-container{
+  width: 80vh;
+  text-align: center;
+}
+.todo-form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} 
+.add-button{
+  border: none;
+  border-radius: 4px;
+  background-color: #2575fc; /* Button background color */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 38px;
+}
+.todo-item-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
